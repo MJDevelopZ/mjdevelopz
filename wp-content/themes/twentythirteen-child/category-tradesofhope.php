@@ -38,6 +38,6 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <!--Sidebar for Trades of Hope Category-->
-<?php get_sidebar(); ?>
+<?php get_sidebar('tradesofhope'); ?>
 
 <?php get_footer(); ?>

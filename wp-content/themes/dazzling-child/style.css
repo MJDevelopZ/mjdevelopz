@@ -1,0 +1,375 @@
+/*
+Theme Name: Dazzling Child
+Theme URI: http://colorlib.com/wp/themes/dazzling
+Author: MJDevelopZ
+Author URI: www.mjdevelopz.com
+Template: Dazzling
+Description: Dazzling is a clean, modern, minimal and fully responsive flat design WordPress WooCommerce theme well suited for blogs, static and ecommerce websites. Theme can be used for travel, corporate, portfolio, photography, green thinking, nature, health, personal and any other creative and minimalistic style website. Dazzling theme is highly customizable with unlimited color options, slider, call for action button, several widget areas and much more that can be adjusted via Theme Options. The theme is built using Bootstrap 3, which makes it responsive and mobile friendly. It features infinite scroll, SEO friendly structure, logo upload, full-screen slider, call for action section, social media icons, popular post widget and translation ready setup. This theme supports WooCommerce and Jigoshop ecommerce plugins. Dazzling is also available in Mexican Spanish, Brazilian Portuguese, Finnish, Swedish, Dutch, Hungarian, German, Persian, Lithuanian and Polish. It is Multilingual ready and compatible with WPML plugin. It is probably the best free WordPress theme built for eStores and business websites.
+Version: 1.5.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: dazzling
+Domain Path: /languages/
+Tags: green, light, white, gray, black, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, responsive-layout, photoblogging, left-sidebar, translation-ready, custom-background, custom-colors, custom-menu, featured-images, full-width-template, post-formats, theme-options, threaded-comments
+
+
+This theme, like WordPress, is licensed under the GPL.
+
+Dazzling is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+
+*/
+
+/*Custom Fonts*/
+/*font-family: 'Sacramento', cursive;*/
+/*font-family: 'Spinnaker', sans-serif;*/
+
+/**
+**Global
+----------------------------------------------------------------------------------- */
+body {
+  color: #2E2246;
+  background-color: #F2EDEE;
+}
+
+a {
+  /*font-family: 'Spinnaker', sans-serif;*/
+  color: #2E2246;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+       -o-transition: all 0.2s;
+          transition: all 0.2s;
+}
+
+a:visited{
+	color: #FB3C67;
+}
+
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+a:hover,
+a:active {
+  color: #333;/*Change color to something within the site color palatte*/
+  text-decoration: underline;
+}
+
+h1, h2, h3, .h1, .h2, .h3{
+  color: #752852;
+  font-family: 'Sacramento', cursive;
+}
+
+h4, h5, h6, .h4, .h5, .h6{
+	font-family: 'Spinnaker', sans-serif;
+}
+
+p, body{
+	font-family: 'Spinnaker', sans-serif;
+	color: #2E2246;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #F888A2;
+}
+
+.entry-content{
+	width: 100%;
+}
+
+/**
+**Buttons
+**---------------------------------------------------------------*/
+
+.btn-default, .label-default {
+  background-color: transparent;
+  border-color: #2E2246;
+}
+.btn-default:hover, .label-default[href]:hover, .label-default[href]:focus, .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover {
+  background-color: #2E2246;
+  border-color: #2E2246;
+  color: #fff !important;
+}
+.btn.btn-default {
+    color: #2E2246;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  color: #666;
+  border: 1px solid #2E2246;
+  border-radius: 3px;
+}
+
+/**
+**Site Header
+**---------------------------------------------------------------*/
+.site-header {
+	position: relative;
+	background-image: url(http://localhost/mjdevelopz/wp-content/uploads/2015/10/cropped-MLD.jpg);
+}
+
+.site-header .home-link {
+  color: #FB3C67;
+  display: block;
+  margin: 0 auto;
+  max-width: 1080px;
+  min-height: 230px;
+  padding: 0 20px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.site-header .site-title:hover {
+  text-decoration: underline;
+}
+
+h1.site-title {
+  font-family: "Sacramento", cursive;
+  font-size: 60px;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  padding: 58px 0 10px;
+  color: #FB3C67;
+}
+
+h2.site-description {
+  font: 300 italic 24px "Spinnaker", sans-serif;
+  margin: 0;
+  text-align: left;
+  color: #65686c;
+}
+
+/**
+**Navigation
+**---------------------------------------------------------------*/
+.navbar.navbar-default{
+	background-color: #fcdbe3;
+	max-width: 100%;
+	border-bottom: 1px solid #fcdbe3;
+}
+
+.nav.navbar-nav{
+	float: none;
+	
+}
+
+ul#menu-menu-1{
+	text-align: left;
+	margin-left: 15%;
+	/*margin-right: 20%;*/
+}
+
+.navbar-default .navbar-nav>li>a{
+	color: #141412;
+	font-family: 'Spinnaker', sans-serif;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+	color: #F888A2;
+	background-color: #2E2246;
+}
+
+.dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a {
+  background-color: #e7e7e7;
+  color: #555;
+}
+
+.site-main [class*="navigation"] a,
+.more-link {
+  border: 1px solid #2E2246;
+  padding: 6px 12px;
+  border-radius: 4px;
+  display: block;
+}
+.site-main [class*="navigation"] a:hover,
+.more-link:hover {
+  color: #fff;
+  background: #2E2246;
+  text-decoration: none;
+}
+.more-link {
+  float: right;
+  margin: 10px 0;
+}
+
+/**
+** Front Page
+**---------------------------------------------------------------------------------*/
+h1.recent-title,
+h2.recent-title{
+	text-align: center;
+}
+#featuredImage{
+	text-align: center;
+}
+
+
+section#moreRecent{
+	margin-top: 20%;
+}
+
+/**
+**Footer
+**---------------------------------------------------------------------------------*/
+.copyright {
+  margin-top: 10px;
+  float: right;
+  /*text-align: right;*/
+  width: 100%;
+}
+
+.entry-meta .fa {
+    color: #2E2246 !important;
+}
+
+/**
+**Page Content Stylings
+**--------------------------------------------------------------------------------*/
+.page-header{
+	border-bottom: 1px solid #2E2246;
+}
+
+blockquote{
+	border-left: 5px solid #F888A2;
+}
+
+article.post{
+	margin-top: 10%;
+}
+
+.content-area{
+ width:70%;
+ float:left;
+}
+.content-area .article-area{
+width:85%;
+float:right;
+}
+.content-area .left-sidebar{
+width:15%;
+float:left;
+}
+.right-sidebar{
+width:30%;
+float:right;
+}
+@media (max-width: 768px) {
+  .right-sidebar,.content-area .article-area,.content-area .left-sidebar {
+    float: none !important;
+  }
+}
+
+/**
+**Post Stylings
+**--------------------------------------------------------------------------------*/
+
+.entry-meta a {
+  font-size: 13px;
+}
+#main .page-header {
+  margin-top: 0;
+}
+
+.entry-meta a {
+  color: #2E2246;
+}
+.entry-meta .fa {
+  color: #FB3C67;
+}
+
+.entry-title {
+  font-family: 'Sacramento', cursive;
+  font-size: 45px;
+  color: #752852;
+}
+.entry-title a {
+  color: #2E2246;
+}
+.entry-title a:hover {
+  color: #F888A2;
+}
+.btn.btn-default.read-more {
+  float: right;
+  border: 1px solid #2E2246;
+  color: #2E2246;
+  background-color: transparent;
+  margin-top: 10px;
+}
+.btn.btn-default.read-more:hover {
+  color: #FFF;
+  background-color: #2E2246;
+}
+.search .btn.btn-default.read-more {
+  float: none;
+}
+hr.section-divider {
+  border-color: #F888A2;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* =Singe Post/Page Pagination
+----------------------------------------------- */
+.page-links span {
+  display: inline-block;
+  color: #fff;
+  background-color: #1FA67A;
+  border-radius: 4px;
+  padding: 2px 10px;
+  margin-left: 2px;
+}
+.page-links a span {
+  background-color: inherit;
+  border: 1px solid #E8E8E8;
+  color: #1FA67A;
+  -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+       -o-transition: all 0.2s;
+          transition: all 0.2s;
+}
+.page-links a:hover span {
+  background-color: #1FA67A;
+  border: 1px solid #1FA67A;
+  color: #fff;
+}
+
+/**
+** TOH Sidebar
+**--------------------------------------------------------------------------------*/
+#secondary{
+	width: 27%;
+	float: right;
+}
+
+span#shop_link{
+	color: red !important;
+}
+
+.widget.widget_text{
+	margin-bottom: 20%;
+}
+
+#weptile-image-slider-widget-2{
+	margin-top: 20%;
+}
+
+#weptile-image-slider-widget-2 h3{
+	text-align: center;
+}
+

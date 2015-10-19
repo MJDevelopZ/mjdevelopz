@@ -3,8 +3,8 @@
  * The default template for displaying content on the front page
  *
  *
- * @package Twenty_Thirteen-Child
- * @subpackage Twenty_Thirteen
+ * @package WordPress
+ * @subpackage Twenty_Thirteen_Child
  * @since Twenty Thirteen Child 1.0
  */
 ?>
@@ -35,20 +35,22 @@
 
 			<!--Begin If/Else to check for featured image-->
 			<?php if ( has_post_thumbnail() ) { ?>
-				<div id="featuredImage">
-					<?php the_post_thumbnail() ;?>
-				</div>
+				
+					<div id="featuredImage">
+						<?php the_post_thumbnail() ;?>
+					</div>
 
-				<div id="featuredContent">
-					<h2 id="featuredPostTitle"><?php the_title();?></h2>
-					<p id="featuredPostContent"><?php the_excerpt();?></p>
-				</div>
+					<div id="featuredContent">
+						<h2 id="featuredPostTitle"><?php the_title();?></h2>
+						<p id="featuredPostContent"><?php the_excerpt();?></p>
+					</div>
+				
 			<?php } else { ?>
 				<div id="onlyFeaturedContent">
 					<h2 id="featuredPostTitle"><?php the_title();?></h2>
 					<p id="featuredPostContent"><?php the_excerpt();?></p>
 				</div>
-			} ?>
+			<?php } ?>
 		
 		<?php endwhile; else: ?>
 			
@@ -64,8 +66,8 @@
 	<!--End recent blog-->
 	
 	<!--New section displaying most recent post in each category (1 / category)-->
-	<header class="section2 entry-header">
-			<hr><h2>More Recents</h2><hr>
+	<header class="section2">
+			<hr><h2 id="moreRecents">More Recents</h2><hr>
 	</header>
 	<section class="moreRecent">
 		<div class="category">

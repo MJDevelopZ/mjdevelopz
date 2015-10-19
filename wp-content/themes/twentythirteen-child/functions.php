@@ -37,4 +37,9 @@ function theme_slug_widgets_init() {
 	'after_title'   => '</h2>',
     ) );
 }
+
+/**
+ * Adds support for a custom header image.
+ */
+require get_stylesheet_directory() . '/inc/custom-header.php';
 ?>
